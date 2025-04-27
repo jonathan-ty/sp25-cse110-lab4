@@ -12,9 +12,9 @@ On line 9, the following will be printed:
 3. ### Why should you not use `var`? Explain why. 
 
 The reason why you should refrain from using `var` is that it is no longer used in modern scripts for the following reasons:
-1. `var` has no block scope, either being function-scoped or global-scoped. 
-2. `var` tolerates redeclarations. Its modern counterpart, `let`, will raise an error should you redeclare a variable with the same name; `var` will not.
-3. `var` declarations are processed at function start (for global variable declared with `var`, it'll get processed at the start of the script or .js file)
+-  `var` has no block scope, either being function-scoped or global-scoped. 
+- `var` tolerates redeclarations. Its modern counterpart, `let`, will raise an error should you redeclare a variable with the same name; `var` will not.
+-  `var` declarations are processed at function start (for global variable declared with `var`, it'll get processed at the start of the script or .js file)
 
 These differences make `var` worse than `let` most of the time.
 
@@ -34,10 +34,10 @@ The code in line 13 returns a `ReferenceError`. The reason why is because the va
 
 ![Code Block for Questions 6-7](../../assets/q6-7.png)
 
-4. ### What is printed by line 9? If the code returns an error, explain why. 
+6. ### What is printed by line 9? If the code returns an error, explain why. 
 
 The code by line 9 returns a `TypeError: Assignment to constant variable`. The reason why is because at line 7, the variable `result` was reassigned the value of the sum of `num1` and `num2`. However, this new assignment is not allowed after its been assigned for the first time. Therefore, even before line 9 could be executed, a `TypeError` was raised beforehand.
 
-1. ### What is printed by line 13? If the code returns an error, explain why. 
+7. ### What is printed by line 13? If the code returns an error, explain why. 
 
 The code by line 13 returns a `TypeError: Assignment to constant variable`. As mentioned for previous question, the reason why is because at line 7, the variable `result` was reassigned the value of the sum of `num1` and `num2`. However, this new assignment is not allowed after its been assigned for the first time. Therefore, even before line 13 could be executed, a `TypeError` was raised beforehand.
