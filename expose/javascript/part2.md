@@ -43,7 +43,7 @@ The code in line 12 returns a `ReferenceError`. The reason why is because the va
 
 6. ### What will happen at line 13 and why? If the code causes an error, explain why.
 
-The code in line 12 returns a `ReferenceError`. The reason why is because the variable declaration for `discountedPrice` using `let` makes it so that `discountedPrice`'s scope is within the code block of the for-loop. Therefore, there will be no reference to `discountedPrice` **outside** of the code block, hence why you encounter a `ReferenceError` when you try to print `discountedPrice` outside the code block with `console.log(discountedPrice)`.
+The code in line 13 returns a `ReferenceError`. The reason why is because the variable declaration for `discountedPrice` using `let` makes it so that `discountedPrice`'s scope is within the code block of the for-loop. Therefore, there will be no reference to `discountedPrice` **outside** of the code block, hence why you encounter a `ReferenceError` when you try to print `discountedPrice` outside the code block with `console.log(discountedPrice)`.
 
 ![Code Block for Questions 7](../../assets/p2-q7.png)
 
@@ -65,13 +65,13 @@ Although it may not seem that the function doesn't return anything since the con
 
 9. ### What will happen at line 11 and why? If the code causes an error, explain why.
 
-The code in line 12 returns a `ReferenceError`. The reason why is because the variable declaration for `i` using `let` makes it so that `i`'s scope is within the code block of the for-loop. Therefore, there will be no reference to `i` **outside** of the code block, hence why you encounter a `ReferenceError` when you try to print `i` outside the code block with `console.log(i)`.
+The code in line 11 returns a `ReferenceError`. The reason why is because the variable declaration for `i` using `let` makes it so that `i`'s scope is within the code block of the for-loop. Therefore, there will be no reference to `i` **outside** of the code block, hence why you encounter a `ReferenceError` when you try to print `i` outside the code block with `console.log(i)`.
 
 ![Code Block for Questions 10](../../assets/p2-q10.png)
 
 10.  ### What will happen at line 12 and why? If the code causes an error, explain why. 
 
-On line 14, the following will be printed: 
+On line 12, the following will be printed: 
 
 `3`
 
@@ -177,9 +177,11 @@ The strict equality operator `===` checks the equality without type conversion. 
 
 16.  ### Given the above Object, write a for...in loop that will iterate through it and print out the value of the property if the property starts with the letter r, or if the value of that property is an odd number.  (This should be in a JS file part2-question16.js)
 
+Please refer to this [link](part2-question16.js) to the file `part2-question16.js`.
+
 ![Code Block for Questions 17](../../assets/p2-q17.png)
 
-17.  ### If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development. 
+17.   ### If the function above is called with the following parameters modifyArray([1,2,3], doSomething), what will be the result? Briefly walk through how you arrived at that result. (This should be in your part2.md). Here we are passing in a function as a parameter, however we can also return a function from another function just as easily, you're encouraged to play around with callbacks as they are used heavily in frontend JS development. 
 
 When `modifyArray([1, 2, 3], doSomething)` is called, the result is `[2, 4, 6]`. The `modifyArray` function iterates through the array `[1, 2, 3]`, applying the `doSomething` callback (which doubles the input) to each element. The results are stored in a new array, which is returned.
 
@@ -187,6 +189,8 @@ When `modifyArray([1, 2, 3], doSomething)` is called, the result is `[2, 4, 6]`.
 ![Code Block for Questions 18](../../assets/p2-q18.png)
 
 18. ### The above program only prints out the time once when executed. Modify this code such that the program prints out the current time every second.  (This should be a JS file - part2-question18.js)
+
+Please refer to this [link](part2-question18.js) to the file `part2-question18.js`
 
 ![Code Block for Questions 19](../../assets/p2-q19.png)
 
